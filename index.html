@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skye Links</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="spm.ico">
+    
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* The specific hot pink from the image */
+            background-color: #f506b3; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Padding from top to separate profile from screen edge */
+            padding-top: 60px; 
+        }
+
+        /* PROFILE SECTION */
+        .profile-container {
+            text-align: center;
+            margin-bottom: 30px;
+            z-index: 2;
+        }
+
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid transparent;
+            margin-bottom: 10px;
+            background-color: #ddd; /* Fallback placeholder */
+        }
+
+        .profile-name {
+            color: white;
+            font-weight: 800; /* Extra bold */
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* LINKS / BUTTONS SECTION */
+        .links-container {
+            width: 100%;
+            max-width: 450px; /* Limits width on desktop */
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between buttons */
+            padding: 0 20px; /* Side padding for mobile */
+        }
+
+        .link-btn {
+            display: block;
+            background-color: white;
+            color: #222;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-align: center;
+            padding: 18px;
+            border-radius: 50px; /* Pill shape */
+            position: relative;
+            
+            /* THE DROP SHADOW EFFECT */
+            /* This creates the hard black shadow offset */
+            box-shadow: 6px 7px 0px #000000; 
+            
+            transition: transform 0.1s, box-shadow 0.1s;
+            border: 1px solid rgba(0,0,0,0.05); /* Very subtle border */
+        }
+
+        /* Hover/Click Interaction */
+        .link-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 4px 5px 0px #000000;
+        }
+
+        .emoji {
+            margin-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Profile Info -->
+    <div class="profile-container">
+        <!-- Profile Image -->
+        <img src="name.jpg" alt="Skye Profile" class="profile-pic">
+        
+        <!-- Name and Flags -->
+        <div class="profile-name">
+            Skye 🇮🇹🇺🇸
+        </div>
+    </div>
+
+    <!-- Link Buttons -->
+    <div class="links-container">
+        <a href="https://onlyfans.com" class="link-btn" target="_blank">
+            Onlyfans <span class="emoji">❤️</span>
+        </a>
+        
+        <a href="https://twitter.com" class="link-btn" target="_blank">
+            Twitter <span class="emoji">✨</span>
+        </a>
+        
+        <a href="https://instagram.com" class="link-btn" target="_blank">
+            Instagram <span class="emoji">❤️</span>
+        </a>
+    </div>
+
+</body>
+</html>
